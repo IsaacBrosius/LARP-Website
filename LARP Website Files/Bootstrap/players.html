@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="BootstrapCSS.css">
+  <link rel="img" href = "Pictures/Asa.JPG">
+  <link rel="img" href = "Pictures/Isaac.JPG">
+  <link rel="img" href = "Pictures/Matthew.JPG">
+  <link rel="img" href = "Pictures/Riley.JPG">
+  <link rel="img" href = "Pictures/Timothy.JPG">
+  <script src="jQueryLibrary.js"></script>
+  <script src="ajaxLibrary.js"></script>
+  <script src="BootstrapJS.js"></script>
+  <link rel = "stylesheet" href = "Website-CSS-file.css">
+  <title>Players Page</title>
+	<script>
+		$(document).ready(function(){
+		  $("#myInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#myTable tr").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		  });
+		});
+		</script>
+	<title>Players Page</title>
+
+</head>
+
+<body style="background-color: #e9ecef">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center">
+<a class="navbar-brand" href="https://airsoftlarpgroup.com">Home</a> 
+<a class="navbar-brand" href="game.html">Game</a> 
+<a class="navbar-brand" href="players.html">Players</a> 
+<a class="navbar-brand" href="https://tinyurl.com/y4pglweo" target="blank">Calendar</a>
+</nav>
+
+<div class="jumbotron text-center">
+
+<br>
+
+<input class="form-control" id="myInput" type="text" placeholder="Find a player..">
+
+<br>
+
+<h2 style="text-align: left">Day-to-Day Things</h2>
+
+<table class="table table-hover table-bordered">
+	<thead>
+		<tr>
+			<th>Player Name</th>
+			<th>Days Attended</th>
+			<th>Total Paar Collected</th>
+			<th>Total Contracts Completed</th>
+			<th>K/D Ratio</th>
+		</tr>
+	</thead>
+	<tbody id="myTable">
+		<tr>
+            <td><a href = "People/Asa.html">Asa</a></td>
+			<td>1</td>
+			<td>Undetermined</td>
+			<td>0</td>
+			<td>Undetermined</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/Daniel.html">Daniel</a></td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td><a href = "People/Elise.html">Elise</a></td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>-->
+		<tr>
+			<td><a href = "People/Isaac.html">Isaac</a></td>
+			<td>1</td>
+			<td>Undetermined</td>
+			<td>0</td>
+			<td>Undetermined</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/Josiah.html">Josiah</a></td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>-->
+		<tr>
+            <td><a href = "People/Matthew.html">Matthew</a></td>
+			<td>1</td>
+			<td>Undetermined</td>
+			<td>0</td>
+			<td>Undetermined</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/Noah.html">Noah</a></td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>-->
+		<tr>
+			<td><a href = "People/Riley.html">Riley</a></td>
+			<td>1</td>
+			<td>Undetermined</td>
+			<td>0</td>
+			<td>Undetermined</td>
+		</tr>
+		<tr>
+			<td><a href = "People/Timothy.html">Timothy</a></td>
+			<td>1</td>
+			<td>Undetermined</td>
+			<td>0</td>
+			<td>Undetermined</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/William.html">William</a></td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>-->
+	</tbody>
+</table>
+
+<h2 style="text-align: left">Masteries</h2>
+
+<table class="table table-hover table-bordered">
+	<thead>
+		<tr>
+			<th>Player Name</th>
+			<th>Pistol</th>
+			<th>Shotgun</th>
+			<th>SMG</th>
+			<th>Assault Rifle</th>
+			<th>Sniper Rifle</th>
+		</tr>
+		</thead>
+		<tbody id="myTable">
+		<tr>
+			<td><a href = "People/Asa.html">Asa</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/Daniel.html">Daniel</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>
+		<tr>
+			<td><a href = "People/Elise.html">Elise</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>-->
+		<tr>
+			<td><a href = "People/Isaac.html">Isaac</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/Josiah.html">Josiah</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>-->
+		<tr>
+			<td><a href = "People/Matthew.html">Matthew</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/Noah.html">Noah</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>-->
+		<tr>
+			<td><a href = "People/Riley.html">Riley</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>
+		<tr>
+			<td><a href = "People/Timothy.html">Timothy</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>
+		<!--<tr>
+			<td><a href = "People/William.html">William</a></td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+			<td>Recruit: 0</td>
+		</tr>-->
+	</tbody>
+</table>
+</div>
+
+<footer>
+
+    Questions? <br>
+  
+    airsoftlarpleader@gmail.com
+    
+  </footer>
+  
+</body>
+</html>
+

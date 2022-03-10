@@ -1,0 +1,91 @@
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
+  }
+
+h1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left; 
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  margin-left: 10%;
+  text-align: left;
+}
+
+.mugshot {
+  width: 20%;
+  float: left;
+  padding-right: 2%;
+}
+  
+#specialP {
+  color: #e9ecef
+}
+
+table {
+  border-collapse: collapse;
+  }
+
+table, td, th {
+  border: 1px solid black;
+  text-align: left;
+  }
+
+.carousel-inner img {
+  width: 50%;
+  height: 50%;    
+}
+
+footer {
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+
+#card {
+  text-align:left;
+  margin-bottom:10%;
+}
+
+body {
+  background-color: #e9ecef;
+}
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 39.5%;
+  position: relative;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+@font-face {
+  font-family: dragonTongue;
+  src: url(dragon_alphabet.ttf);
+}
+
+#encodedP {
+  font-family: dragonTongue;
+  font-size: 30pt;
+}
+
+.button {
+  text-align: "left";
+}
