@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+
+	<meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="BootstrapCSS.css">
+      <script src="jQueryLibrary.js"></script>
+      <script src="ajaxLibrary.js"></script>
+      <script src="BootstrapJS.js"></script>
+      <link rel = "stylesheet" href = "Website-CSS-file.css">
+    <title>Parabola Solver</title>
+
+</head>
+
+<body style="background-color: #e9ecef">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center">
+<a class="navbar-brand" href="https://airsoftlarpgroup.com">Home</a> 
+<a class="navbar-brand" href="../game.html">Game</a> 
+<a class="navbar-brand" href="../players.html">Players</a> 
+<a class="navbar-brand" href="https://tinyurl.com/y4pglweo" target="blank">Calendar</a>
+</nav>
+
+<div class="jumbotron">
+	
+<br>
+
+<h1>Parabola Solver</h1>
+
+<p>The current equation is: </p> 
+
+<p><em id = "1">4</em>x(squared) + <em id = "2">1</em>x + <em id = "3">3</em></p>
+
+<script>
+    
+    var a = 4;
+    var b = 1;
+    var c = 3;
+
+    var parabola_opening;
+    var Vertex = (-1 * b) / (2 * a);
+    var y_intercept = c;
+    var x_intercept;
+    var x = Vertex;
+    var newA = Math.pow((a * x), 2);
+    var y = newA + (b * x) + c;
+    var aos = Vertex;
+    var minMax;
+    var coordinates = "(" + x + ", " + y + ")";
+    
+    if (a > 0) {parabola_opening = "up";}
+    else if (a < 0) {parabola_opening = "down";}
+    
+    if (parabola_opening === "up") {minMax = "min";}
+    if (parabola_opening === "down") {minMax = "max";}
+
+    function add1xs() {
+        a+=1;
+        document.getElementById("1").innerHTML = a;
+        console.log(a);
+    }
+
+    function minus1xs() {
+        a-=1;
+        document.getElementById("1").innerHTML = a;
+        console.log(a);
+    }
+
+    function add1x() {
+        b+=1;
+        document.getElementById("2").innerHTML = b;
+        console.log(b);
+    }
+
+    function minus1x() {
+        b-=1;
+        document.getElementById("2").innerHTML = b;
+        console.log(b);
+    }
+
+    function add1() {
+        c+=1;
+        document.getElementById("3").innerHTML = c;
+        console.log(c);
+    }
+
+    function minus1() {
+        c-=1;
+        document.getElementById("3").innerHTML = c;
+        console.log(c);
+    }
+
+    function solve()  {
+
+    document.getElementById("up/down").innerHTML = "Up/Down = " + parabola_opening;
+    document.getElementById("vertex").innerHTML = " The vertex = " + Vertex;
+    document.getElementById("AOS").innerHTML = "The axis of symmetry = " + aos;
+    document.getElementById("y-intercept").innerHTML = "The y-intercept = " + y_intercept;
+    document.getElementById("min/max").innerHTML = "The vertex is " + minMax;
+    document.getElementById("coordinates").innerHTML = "The vertex's coordinates is " + coordinates;
+
+}
+    
+    /*println("up/down = " + parabola_opening); 
+    println("vertex = " + Vertex); 
+    println("AOS = " + aos);
+    println("y-intercept = " + y_intercept);
+    println("min/max = " + minMax);
+    println("vertex coordinates = " + coordinates);*/
+    
+    </script>
+
+<button onclick = "add1xs()" class = "btn btn-primary">+1x(squared)</button> 
+<button onclick = "minus1xs()" class = "btn btn-primary">-1x(squared)</button>
+
+<p></p>
+
+<button onclick = "add1x()" class = "btn btn-primary">+1x</button> 
+<button onclick = "minus1x()" class = "btn btn-primary">-1x</button>
+
+<p></p>
+
+<button onclick = "add1()" class = "btn btn-primary">+1</button> 
+<button onclick = "minus1()" class = "btn btn-primary">-1</button>
+
+<p></p>
+
+<button class = "btn btn-primary" onclick = "solve()">Solve</button>
+
+<p></p>
+
+    <p id = "up/down">
+
+        Whether the parabola opens up or down will show here.
+
+    </p>
+
+    <p id = "vertex">
+
+        The value of the vertex will be shown here.
+
+    </p>
+
+    <p id = "AOS">
+
+        The value of the axis of symmetry will be shown here.
+
+    </p>
+
+    <p id = "y-intercept">
+
+        The value of the y-intercept will be shown here.
+
+    </p>
+
+    <p id = "min/max">
+
+        Whether the vertex is minimum or maximum will be shown here.
+
+    </p>
+
+    <p id = "coordinates">
+
+        The coordinates of the minimum or maximum will be shown here.
+
+    </p>
+
+</div>
+</body>
+</html>

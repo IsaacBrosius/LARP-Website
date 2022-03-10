@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jQueryLibrary.js"></script>
+    <script src="ajaxLibrary.js"></script>
+    <script src="BootstrapJS.js"></script>
+    <link rel="stylesheet" href="BootstrapCSS.css">
+    <link rel = "stylesheet" href = "Website-CSS-file.css">
+
+    <script>
+
+		var button = function(id, word) {
+    		this.id = id;
+			this.word = word;
+		};
+
+	button.prototype.draw = function() {
+	 
+	document.getElementById(this.id).innerHTML = this.word;
+		
+     };
+		
+	 var contract1 = new button("contractor", "Blades");
+	 var contract2 = new button("contractor", "Dovah")
+
+
+
+	</script>
+	
+    <title>Contract Calculator</title>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+
+	<div class="dropdown">
+
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id = "contractor">
+		  Contractor...
+		</button>
+
+		<div class="dropdown-menu">
+		 
+		  <span class="dropdown-item-text" onclick="contract1.draw()">Blades</span>
+		  <span class="dropdown-item-text" onclick="contract2.draw()">Dovah</span>
+
+		</div>
+	  </div>
+
+	  <br>
+
+	<div class="dropdown">
+
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id = "FA/SA P">
+		  FA/SA Pistol...
+		</button>
+
+		<div class="dropdown-menu">
+		 
+		  <span class="dropdown-item-text" onclick="">Recruit</span>
+		  <span class="dropdown-item-text" onclick="">Private</span>
+		  <span class="dropdown-item-text" onclick="">Corporal</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Staff Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant Major</span>
+		  <span class="dropdown-item-text" onclick="">One-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Two-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Three-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Four-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Five-Star General</span>
+
+		</div>
+	  </div>
+
+	  <br>
+
+	  <div class="dropdown">
+
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id = "SP">
+		  Spring Pistol...
+		</button>
+
+		<div class="dropdown-menu">
+		 
+		  <span class="dropdown-item-text" onclick="">Recruit</span>
+		  <span class="dropdown-item-text" onclick="">Private</span>
+		  <span class="dropdown-item-text" onclick="">Corporal</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Staff Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant Major</span>
+		  <span class="dropdown-item-text" onclick="">One-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Two-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Three-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Four-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Five-Star General</span>
+
+		</div>
+	  </div>
+
+	  <br>
+
+	  <div class="dropdown">
+
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id = "AR">
+		  Assualt Rifle...
+		</button>
+
+		<div class="dropdown-menu">
+		 
+		  <span class="dropdown-item-text" onclick="">Recruit</span>
+		  <span class="dropdown-item-text" onclick="">Private</span>
+		  <span class="dropdown-item-text" onclick="">Corporal</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Staff Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant Major</span>
+		  <span class="dropdown-item-text" onclick="">One-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Two-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Three-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Four-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Five-Star General</span>
+
+		</div>
+	  </div>
+
+	  <br>
+
+	  <div class="dropdown">
+
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id = "SMG">
+		  SMG...
+		</button>
+
+		<div class="dropdown-menu">
+		 
+		  <span class="dropdown-item-text" onclick="">Recruit</span>
+		  <span class="dropdown-item-text" onclick="">Private</span>
+		  <span class="dropdown-item-text" onclick="">Corporal</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Staff Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant Major</span>
+		  <span class="dropdown-item-text" onclick="">One-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Two-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Three-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Four-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Five-Star General</span>
+
+		</div>
+	  </div>
+
+	  <br>
+
+	  <div class="dropdown">
+
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id = "SN">
+		  Sniper Rifle...
+		</button>
+
+		<div class="dropdown-menu">
+		 
+		  <span class="dropdown-item-text" onclick="">Recruit</span>
+		  <span class="dropdown-item-text" onclick="">Private</span>
+		  <span class="dropdown-item-text" onclick="">Corporal</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Staff Sergeant</span>
+		  <span class="dropdown-item-text" onclick="">Sergeant Major</span>
+		  <span class="dropdown-item-text" onclick="">One-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Two-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Three-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Four-Star General</span>
+		  <span class="dropdown-item-text" onclick="">Five-Star General</span>
+
+		</div>
+	  </div>
+
+	  <p>Contract: ...</p>
+
+	  <br>
+
+	  <p>Worth: ...</p>
+
+	  <br> 
+
+	  <p>Bonus: ...</p>
+
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
